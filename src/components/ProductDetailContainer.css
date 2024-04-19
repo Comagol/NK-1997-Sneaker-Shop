@@ -1,0 +1,32 @@
+.prodDetailContainer {
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #233;
+    border-radius: 10px;
+}
+
+.imgProd {
+    width: 98%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.nameProd {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    color: #233;
+}
+
+.priceProd {
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #233;
+}

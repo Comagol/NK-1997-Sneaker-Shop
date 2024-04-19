@@ -1,0 +1,29 @@
+.navbar_container {
+    display: flex;
+    width: 100%;
+    background-color: #000;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navlink {
+    color: #aaa;
+    list-style: none;
+    text-decoration: none;
+}
+
+.logo_container {
+    padding: 10px;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    opacity: 100%;
+}
