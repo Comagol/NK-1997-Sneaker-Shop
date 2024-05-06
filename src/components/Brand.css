@@ -1,0 +1,20 @@
+.brandProd {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: #233;
+}
+
+.btn {
+    padding: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.productsContainer {
+    margin-top: 25px;
+}
+
+.imgProd {
+    height: 350px;
+}

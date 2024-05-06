@@ -5,7 +5,8 @@ import carritoDeCompras from '../img/carritoColot.png'
 
 const CartWidget = () => {
   return (
-    <Link to={'/'} className='CartWidget'>
+    <Link to={'/cart'} className='CartWidget'>
+        <p>0</p>
         <img alt='carrito' src={carritoDeCompras} className='CartImg'></img>
     </Link>
   )

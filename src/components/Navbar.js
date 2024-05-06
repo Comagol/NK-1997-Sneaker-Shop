@@ -1,12 +1,12 @@
 import './Navbar.css'
-import { Link } from 'react-router-dom';  // Importa la etiqueta Link
-import sneakershop_transparent from '../img/sneakershop_transparent.png'
+import { Link } from 'react-router-dom';
+import sneakershop_transparent from '../img/sneakershop_transparent.png';
 import CartWidget from './CartWidget';
 
 function Navbar() {
     return (
         <div className="navbar_container">
-            <Link to="/" className='logo_container'> {/* Envuelve el logo con Link */}
+            <Link to="/" className='logo_container'>
                 <img className='logo' src={sneakershop_transparent} alt="Logo" />
             </Link>
             <ul className='navbar'>
