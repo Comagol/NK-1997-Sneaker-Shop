@@ -1,5 +1,6 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { products } from '../asyncmock/asyncmock';
 import './Brand.css';
 
@@ -18,7 +19,7 @@ const Brand = () => {
   return (
     <div className="productsContainer">
       {brandProducts.map(product => (
-          <div key={product.id} className='prodDetailContainer'>
+        <div key={product.id} className='prodDetailContainer'>
           <h2 className='brandProd'>{product.brand}</h2>
           <img src={product.img} alt={product.name} className='imgProd' />
           <Link to={`/productos/${product.brand}`}>

@@ -6,6 +6,7 @@ import Favorites from './Favorites';
 import Contact from './Contact';
 import Cart from './Cart';
 import Brand from './Brand';
+import BrandProducts from './BrandProducts';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/productos" element={<Products />} />
           <Route path="/contacto" element={<Contact />} />
           <Route path="/favoritos" element={<Favorites />} />
+          <Route path="/productos/:brand" element={<BrandProducts />} />
           <Route path="/cart" element={<Cart />}/>
         </Routes>
       </BrowserRouter> 
