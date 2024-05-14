@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { products } from '../asyncmock/asyncmock';
+import './BrandProducts.css';
 
 const BrandProducts = () => {
   const { brand } = useParams();
@@ -10,7 +11,7 @@ const BrandProducts = () => {
 
   return (
     <div>
-      <h1>Zapatillas de {brand}</h1>
+      <h3 className='brandTitle'>Zapatillas de {brand}</h3>
       <div className="productsContainer">
         {filteredProducts.map(product => (
           <div key={product.id} className='prodDetailContainer'>
@@ -18,6 +19,7 @@ const BrandProducts = () => {
             <img src={product.img} alt={product.name} className='imgProd' />
             <p>{product.description}</p>
             <p>Precio: ${product.price}</p>
+            <button className='btn'>Comprar</button>
           </div>
         ))}
       </div>

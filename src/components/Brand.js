@@ -8,12 +8,10 @@ const Brand = () => {
   const { brand } = useParams();
   let brandProducts = products.filter(product => product.marca === true);
 
-  // Filtrar productos de la marca seleccionada
   if (brand) {
     brandProducts = brandProducts.filter(product => product.brand === brand);
   }
 
-  // Mostrar solo tres productos de la marca
   brandProducts = brandProducts.slice(0, 3);
 
   return (

@@ -1,0 +1,17 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #233;
+}
+
+.brandTitle {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #233;
+    font-size: 40px;
+}
+
+.btn {
+    padding: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+}
