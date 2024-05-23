@@ -1,16 +1,16 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { products } from '../asyncmock/asyncmock';
 import './BrandProducts.css';
 
 const BrandProducts = () => {
   const { brand } = useParams();
-  
+
   // Filtrar productos por la marca seleccionada
   const filteredProducts = products.filter(product => product.brand === brand);
 
   return (
-    <div>
+    <div className='brandProdCont'>
       <h3 className='brandTitle'>Zapatillas de {brand}</h3>
       <div className="productsContainer">
         {filteredProducts.map(product => (
@@ -19,7 +19,9 @@ const BrandProducts = () => {
             <img src={product.img} alt={product.name} className='imgProd' />
             <p>{product.description}</p>
             <p>Precio: ${product.price}</p>
-            <button className='btn'>Comprar</button>
+            <Link to={`/producto/${product.id}`}>
+              <button className='btn'>Comprar</button>
+            </Link>
           </div>
         ))}
       </div>

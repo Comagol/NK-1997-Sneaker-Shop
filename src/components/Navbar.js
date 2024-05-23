@@ -13,7 +13,6 @@ function Navbar() {
                 <Link className='navlink' to="/">Home</Link>
                 <Link className='navlink' to="/productos">Productos</Link>
                 <Link className='navlink' to="/contacto">Contacto</Link>
-                <Link className='navlink' to="/favoritos">Favoritos</Link>
             </ul>
             <CartWidget/>
         </div>

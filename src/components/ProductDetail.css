@@ -1,0 +1,54 @@
+/* Estilos generales */
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #233;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.productDetailContainer {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.productImage {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.productInfo {
+  flex: 1;
+}
+
+.productName {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.productDescription {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.productPrice, .productStock {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.buyButton {
+  padding: 10px 20px;
+  background-color: #233;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buyButton:hover {
+  background-color: #555;
+}

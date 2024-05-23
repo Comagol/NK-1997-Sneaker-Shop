@@ -14,5 +14,12 @@
     padding: 8px;
     text-decoration: none;
     margin-top: 10px;
-    color: red;
+}
+
+.prodDetailContainer {
+    transition: transform 0.3s ease-in-out;
+}
+
+.prodDetailContainer:hover {
+    transform: scale(1.05);
 }
