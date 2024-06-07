@@ -1,7 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { products } from '../asyncmock/asyncmock';
-import './ProductDetail.css'; // Asegúrate de importar el archivo CSS
+import './ProductDetail.css';
+import Counter from './Counter';
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -19,7 +20,7 @@ const ProductDetail = () => {
         <p className="productDescription">{product.description}</p>
         <p className="productPrice">Precio: ${product.price}</p>
         <p className="productStock">Stock: {product.stock}</p>
-        <button className="buyButton">Comprar</button>
+        <Counter product={product} ></Counter>
       </div>
     </div>
   );

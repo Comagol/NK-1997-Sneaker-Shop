@@ -4,9 +4,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Products from './Products';
 import ProductDetail from './ProductDetail';
 import Contact from './Contact';
-import Cart from './Cart';
 import Brand from './Brand';
 import BrandProducts from './BrandProducts';
+import CartDetail from './CartDetail';
+
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route path="/contacto" element={<Contact />} />
           <Route path="/productos/:brand" element={<BrandProducts />} />
           <Route path="/producto/:id" element={<ProductDetail />} />
-          <Route path="/cart" element={<Cart />}/>
+          <Route path="/cartdetail" element={<CartDetail />}/>
         </Routes>
       </BrowserRouter> 
     </div>
