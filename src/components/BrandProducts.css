@@ -23,3 +23,16 @@
 .prodDetailContainer:hover {
     transform: scale(1.05);
 }
+
+.prodDescription {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #233;
+    padding-top: 5px;
+}
+
+.price {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #233;
+    font-size: 22px;
+    padding-top: 12px;
+}

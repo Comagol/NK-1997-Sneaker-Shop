@@ -6,7 +6,6 @@ import './BrandProducts.css';
 const BrandProducts = () => {
   const { brand } = useParams();
 
-  // Filtrar productos por la marca seleccionada
   const filteredProducts = products.filter(product => product.brand === brand);
 
   return (
@@ -17,8 +16,8 @@ const BrandProducts = () => {
           <div key={product.id} className='prodDetailContainer'>
             <h2 className='brandProd'>{product.name}</h2>
             <img src={product.img} alt={product.name} className='imgProd' />
-            <p>{product.description}</p>
-            <p>Precio: ${product.price}</p>
+            <p className='prodDescription'>{product.description}</p>
+            <p className='price'>Precio: ${product.price}</p>
             <Link to={`/producto/${product.id}`}>
               <button className='btn'>Comprar</button>
             </Link>

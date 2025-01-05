@@ -11,10 +11,10 @@ const CartWidget = () => {
 
   return (
     <Link to={'/cartdetail'} className='CartWidget'>
-        <span>{getCartCount()}</span>
+        <span className='Count'>{getCartCount()}</span>
         <img alt='carrito' src={carritoDeCompras} className='CartImg'></img>
     </Link>
   )
 }
 
-export default CartWidget
+export default CartWidget 
